@@ -1,6 +1,16 @@
-## Información sobre la PreEntrega2
+## Información sobre el Desafio 6
 
-En la PreEntrega2, se hizo uso del paquete Mongoose y MongoDB Atlas para la persistencia de la información. Se agregó la carpeta DAO que contiene los manejadores tanto para el funcionamiento con archivos como para la funcionalidad con MongoDB. De esta forma, conviven ambos sistemas de persistencia. Además, en la carpeta `dao/models`, se dejaron los Schemas que representan cada entidad involucrada, en este caso, Product, Message y Cart.
+Se incluyo funcionalidad de login y registro de usuarios, los mismos son necesarios para acceder a las secciones de Productos, 
+Perfil y Carrito. Para ello se utilizo el paquete "express-session", ademas se agrego el modelo User para persistir la informacion de cada usuario que se registre.
+
+Las rutas agregadas en este desafio son las siguientes: 
+
+- **GET**      http://localhost:8080/view/login
+- **GET**      http://localhost:8080/view/register
+- **GET**      http://localhost:8080/view/logout
+- **GET**      http://localhost:8080/view/profile
+- **POST**     http://localhost:8080/api/auth/register
+- **POST**     http://localhost:8080/api/auth/login
 
 A continuación, se detallan los endpoints de la API:
 
